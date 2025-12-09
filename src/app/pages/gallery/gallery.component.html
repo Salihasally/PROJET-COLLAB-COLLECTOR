@@ -1,0 +1,11 @@
+<div class="gallery-container">
+  <ng-container *ngFor="let item of items; let i = index">
+    <a class="card" [routerLink]="['/product', item.id]">
+      <img [src]="getMainPhoto(item)" alt="{{ item.title }}">
+      <div class="info">
+        <h3 class="card-title">{{ item.title }}</h3>
+        <p class="price">{{ item.price | number }} €</p>
+      </div>
+    </a>
+  </ng-container>
+</div>

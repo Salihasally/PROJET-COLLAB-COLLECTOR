@@ -1,0 +1,35 @@
+<ng-container *ngIf="item; else notFound">
+  <div class="product-layout">
+    <div class="left">
+      <img class="main-photo" [src]="item.photos[0]" alt="photo principale">
+      <div class="thumbs">
+        <img *ngFor="let p of item.photos" [src]="p" (click)="changeMainPhoto(p)" class="thumb"/>
+      </div>
+    </div>
+
+    <div class="right">
+      <h1>{{ item.title }}</h1>
+      <div class="price">{{ item.price | number }} €</div>
+     <p class="long-desc">
+  Découvrez ce remarquable modèle de collection, soigneusement conservé et présenté dans un état proche du neuf.
+  Cette pièce rare combine authenticité, élégance et performance, offrant une expérience unique pour tout amateur
+  de rétro ou collectionneur passionné. Grâce à ses lignes intemporelles et son caractère iconique, elle attire
+  immédiatement l’attention et trouve naturellement sa place dans une collection prestigieuse.
+
+  Chaque détail a été préservé avec soin : finitions impeccables, matériaux d’origine respectés, et fonctionnement
+  fluide. Cet objet n’est pas seulement un bel élément décoratif, mais un véritable morceau d’histoire qui témoigne
+  d’un savoir-faire exceptionnel. Idéal pour enrichir une collection privée, valoriser un intérieur ou offrir un
+  cadeau d’exception.
+
+  Une occasion rare pour les passionnés souhaitant acquérir une pièce authentique, élégante et parfaitement entretenue.
+</p>
+
+      <button class="btn-buy">Acheter</button>
+      <button class="btn-msg">Message</button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #notFound>
+  <div style="padding:30px; color:#b00;">Produit introuvable</div>
+</ng-template>

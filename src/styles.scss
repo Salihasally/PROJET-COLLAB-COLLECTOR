@@ -1,1 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+/* HEADER VINTAGE PREMIUM */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0c0c0c;
+  padding: 12px 40px;
+  border-bottom: 3px solid #d4a054;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f2e6ce;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 480px;
+  padding: 10px 14px;
+  border-radius: 30px;
+  border: 2px solid #d4a054;
+  font-size: 14px;
+  background: #faf5e6;
+}
+
+.header-right a {
+  margin-left: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login {
+  color: #e2d1a3;
+}
+
+.signup {
+  color: black;
+  background: #d4a054;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.signup:hover, .login:hover {
+  opacity: 0.8;
+}
+
+/* Menu catégories */
+
+.nav-categories {
+  display: flex;
+  justify-content: center; /* ➜ CENTRÉ */
+  align-items: center;
+  gap: 32px;
+  background: #1a1a1a;
+  padding: 12px 0;
+  border-bottom: 2px solid #d4a054;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-categories a {
+  color: #e6d8b9;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-categories a:hover {
+  color: #ffffff;
+}
+/* Style du bouton S'inscrire dans l'en-tête */
+.header-right .signup-btn {
+  color: #d4a665; /* Or élégant */
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: 0.25s ease-in-out;
+}
+
+.header-right .signup-btn:hover {
+  background-color: #d4a665;
+  color: #000; /* Texte noir sur fond or */
+}

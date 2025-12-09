@@ -1,0 +1,43 @@
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* espace entre les cartes */
+  padding: 20px 40px;
+  width: 100%;
+  max-width: 1300px; /* assez large pour 3 cartes */
+  margin: 20px auto;
+}
+
+.card {
+  width: 100%;
+  background: #f9efd8;
+  border: 3px solid #d4a665;
+  border-radius: 12px;
+  text-align: center;
+  padding: 25px;
+  transition: transform .2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 12px 0 4px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 18px;
+  color: #5b3e06;
+}

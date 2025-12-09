@@ -1,0 +1,62 @@
+.register-container {
+  width: 450px;
+  margin: 50px auto;
+  background: #f9efdc;
+  padding: 30px;
+  border-radius: 12px;
+  border: 3px solid #b7925b;
+  font-family: "Georgia", serif;
+  text-align: center;
+  color: black;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #3f2c14;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #5c4525;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ae8953;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #7b5b30;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #b08240;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-submit:hover {
+  background: #916c37;
+}
